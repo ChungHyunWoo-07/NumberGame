@@ -13,7 +13,7 @@ public class BaseballGame {
     int ball;
 
 
-    public BaseballGame(int dt) {
+    public BaseballGame(int dt) { //정답자리 숫자 받아옴
         display = new BaseballGameDisplay();
         // 정답 숫자 만들기
         StringBuilder sb = new StringBuilder();

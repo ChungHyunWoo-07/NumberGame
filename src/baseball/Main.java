@@ -22,8 +22,21 @@ public class Main {
             }
             switch (chk){
                 case 0:
-                    System.out.println("설정하고자 하는 자리수를 입력하세요.");
-                    j = sc.nextInt();
+                    System.out.println("설정하고자 하는 자리수를 입력하세요(3, 4, 5 중에 선택).");
+                    switch (sc.nextInt()){ // 설정하고자 하는 자리수 입력
+                        case 3:
+                            j = 3;
+                            break;
+                        case 4:
+                            j = 4;
+                            break;
+                        case 5:
+                            j = 5;
+                            break;
+                        default:
+                            System.out.println("다시 입력하세요.");
+                            continue;
+                    }
                     chk = 1;
 
                 case 1:
