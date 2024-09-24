@@ -37,21 +37,21 @@ public class Main {
                             System.out.println("다시 입력하세요.");
                             continue;
                     }
-                    chk = 1;
+                    chk = 1;  // 난이도 설정 후 바로 게임 시작하기 위해 chk 에 1을 넣어 case 1으로 보냄
 
                 case 1:
                     BaseballGame game = new BaseballGame(j);
                     System.out.println("게임을 시작합니다.");
                     cnt = game.play(j);
                     System.out.println("정답입니다. 도전횟수는: " + cnt);
-                    arr.add(cnt);
+                    arr.add(cnt); // 배열에 도전횟수 저장
                     break;
 
                 case 2:
                     System.out.println("게임 기록 보기");
                     // 출력하려고 하는 만큰만 for 언제끝날지 모르는 출력을 원할 때 while
                     for (int i = 0; i < arr.size(); i++) {
-                        System.out.println(i+1 + "번째 게임 : 시도 횟수 - " + arr.get(i)); //기능을 확인하고 사용
+                        System.out.println(i+1 + "번째 게임 : 시도 횟수 - " + arr.get(i)); //기능을 확인하고 사용(기능 사용을 위해 . 찍어보기)
                     }
                     break;
 
